@@ -2,7 +2,7 @@ export interface Work {
     id: string;
     title: string;
     description: string;
-    category: "編み物" | "刺繍" | "ソーイング" | "その他";
+    category: "編み物" | "刺繍";
     thumbnail: string;
     images: string[];
     materials: string[];
@@ -178,7 +178,7 @@ export const works: Work[] = [
     },
 ];
 
-export const categories = ["すべて", "編み物", "刺繍", "ソーイング", "その他"] as const;
+export const categories = ["すべて", "編み物", "刺繍"] as const;
 
 export type Category = (typeof categories)[number];
 

@@ -101,7 +101,7 @@ export default function Home() {
             <p className="text-lg text-[var(--text-secondary)] leading-relaxed">
               「手芸のおうち」は、日々の暮らしに温もりを添える<br className="hidden sm:inline" />
               ハンドメイド作品を制作しています。<br /><br />
-              編み物、刺繍、ソーイングなど、<br className="hidden sm:inline" />
+              編み物、刺繍など、<br className="hidden sm:inline" />
               様々な技法を使って一点一点丁寧に仕上げています。<br /><br />
               あなたの暮らしに寄り添う、<br className="hidden sm:inline" />
               特別な一品が見つかりますように。
@@ -136,7 +136,6 @@ export default function Home() {
             {[
               { name: "編み物", icon: "🧶", description: "あたたかなニット作品", color: "var(--accent-pink)" },
               { name: "刺繍", icon: "🪡", description: "繊細な糸の表現", color: "var(--accent-lavender)" },
-              { name: "ソーイング", icon: "✂️", description: "実用的な布小物", color: "var(--accent-green)" },
             ].map((category) => (
               <Link
                 key={category.name}
