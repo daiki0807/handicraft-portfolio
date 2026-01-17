@@ -86,7 +86,7 @@ export default function ProfilePage() {
                 </div>
 
                 {/* Skills Section */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div className="max-w-3xl mx-auto mb-12">
                     <div className="bg-[var(--background-card)] rounded-3xl p-8 shadow-soft">
                         <h3 className="font-heading text-xl text-[var(--text-primary)] mb-6">
                             得意な技法
@@ -110,29 +110,6 @@ export default function ProfilePage() {
                                 </div>
                             ))}
                         </div>
-                    </div>
-
-                    {/* Activity History */}
-                    <div className="bg-[var(--background-card)] rounded-3xl p-8 shadow-soft">
-                        <h3 className="font-heading text-xl text-[var(--text-primary)] mb-6">
-                            活動経歴
-                        </h3>
-                        <ul className="space-y-4">
-                            {[
-                                { year: "2024", event: "オンラインショップ開設" },
-                                { year: "2023", event: "ハンドメイドマルシェ出展" },
-                                { year: "2022", event: "手芸教室アシスタント開始" },
-                                { year: "2020", event: "SNSでの作品発信開始" },
-                                { year: "2015", event: "手芸を本格的に始める" },
-                            ].map((item) => (
-                                <li key={item.year} className="flex gap-4">
-                                    <span className="text-[var(--accent-primary)] font-accent font-semibold whitespace-nowrap">
-                                        {item.year}
-                                    </span>
-                                    <span className="text-[var(--text-secondary)]">{item.event}</span>
-                                </li>
-                            ))}
-                        </ul>
                     </div>
                 </div>
 
