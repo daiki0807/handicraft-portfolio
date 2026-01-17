@@ -58,7 +58,7 @@ export default function ProfilePage() {
                             <p className="font-accent text-[var(--accent-primary)] mb-6">Handcraft Artist</p>
 
                             <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
-                                はじめまして、手芸のおうちへようこそ。<br /><br />
+                                はじめまして、ママと子どものハンドメイド作品へようこそ。<br /><br />
                                 幼い頃から母の影響で手芸に親しみ、編み物、刺繍など
                                 様々な技法を独学で学んできました。<br /><br />
                                 「日常に温もりを」をモットーに、使う人の暮らしに優しく寄り添う
