@@ -15,11 +15,7 @@ const socialLinks = [
     },
 ];
 
-const skills = [
-    { name: "編み物", level: 90, icon: "🧶" },
-    { name: "刺繍", level: 85, icon: "🪡" },
-    { name: "レース編み", level: 75, icon: "🕸️" },
-];
+
 
 export default function ProfilePage() {
     return (
@@ -85,33 +81,7 @@ export default function ProfilePage() {
                     </div>
                 </div>
 
-                {/* Skills Section */}
-                <div className="max-w-3xl mx-auto mb-12">
-                    <div className="bg-[var(--background-card)] rounded-3xl p-8 shadow-soft">
-                        <h3 className="font-heading text-xl text-[var(--text-primary)] mb-6">
-                            得意な技法
-                        </h3>
-                        <div className="space-y-5">
-                            {skills.map((skill) => (
-                                <div key={skill.name}>
-                                    <div className="flex items-center justify-between mb-2">
-                                        <span className="flex items-center gap-2 text-[var(--text-secondary)]">
-                                            <span className="text-xl">{skill.icon}</span>
-                                            {skill.name}
-                                        </span>
-                                        <span className="text-sm text-[var(--text-light)]">{skill.level}%</span>
-                                    </div>
-                                    <div className="h-2 bg-[var(--accent-cream)] rounded-full overflow-hidden">
-                                        <div
-                                            className="h-full bg-gradient-soft rounded-full transition-all duration-1000"
-                                            style={{ width: `${skill.level}%` }}
-                                        ></div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
+
 
                 {/* Link to Gallery */}
                 <div className="text-center mt-12">
