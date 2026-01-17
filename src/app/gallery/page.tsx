@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import WorkCard from "@/components/WorkCard";
 import { works, categories, getWorksByCategory, Category } from "@/data/works";
 
-export default function GalleryPage() {
+function GalleryContent() {
     const searchParams = useSearchParams();
     const categoryParam = searchParams.get("category");
 
@@ -85,5 +85,13 @@ export default function GalleryPage() {
                 )}
             </div>
         </div>
+    );
+}
+
+export default function GalleryPage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+            <GalleryContent />
+        </Suspense>
     );
 }
